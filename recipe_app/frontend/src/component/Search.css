@@ -1,0 +1,21 @@
+input {
+    width: 30em;
+    height: 40em;
+    border-radius: 6px;
+    padding: 8px;
+    border: none;
+    position: relative;
+    z-index: 100;
+    background: #ffffffd5;
+}
+
+@media screen and (min-width: 1024px) {
+
+                input {
+                    width: 35em;
+                    height: 3.4em;
+                    border-radius: 6px;
+                    padding: 8px;
+                    border: none;
+                }
+}
