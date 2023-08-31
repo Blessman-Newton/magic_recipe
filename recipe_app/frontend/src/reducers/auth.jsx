@@ -1,0 +1,105 @@
+// import {
+//     LOGIN_SUCCESS,
+//     LOGIN_FAIL,
+//     LOGIN_LOADED_SUCCESS,
+//     LOGIN_LOADED_FAIL,
+// } from '../actions/types'
+
+// const initialStates = {
+//     access: localStorage.getItem('access'),
+//     refresh: localStorage.getItem('refresh'),
+//     isAuthenticated: null,
+//     user: null
+// };
+
+// export default function myauths(state = initialStates, action) {
+//     const { type, payload } = action
+
+//     switch(type) {
+//         case LOGIN_SUCCESS:
+//             localStorage.setItem('access', payload.access);
+//             return {
+//                 ...state,
+//                 isAuthenticated: true, 
+//                 access: payload.access,
+//                 refresh: payload.refresh,
+//             };
+//         case LOGIN_LOADED_SUCCESS:
+//             return {
+//                 ...state,
+//                 user: payload,
+//             };
+//         case LOGIN_LOADED_FAIL:
+//             return {
+//                 ...state,
+//                 user: null,
+//             };
+//         case LOGIN_FAIL:
+//             localStorage.removeItem('access');
+//             localStorage.removeItem('refresh');
+//             return {
+//                 ...state,
+//                 isAuthenticated: false, 
+//                 access: null,
+//                 refresh: null,
+//                 user: null,
+//             };
+//         default:
+//             return state; // Handling the default case by returning the current state
+//     }
+// }
+
+
+import {
+    LOGIN_SUCCESS,
+    LOGIN_FAIL,
+    LOGIN_LOADED_SUCCESS,
+    LOGIN_LOADED_FAIL,
+} from '../actions/types'
+
+// Fetch access value from localStorage, or set it to null if not available
+//const initialAccess = localStorage.getItem('access') || null;
+
+const initialStates = {
+    access: localStorage.getItem('access'),
+    refresh: localStorage.getItem('refresh'),
+    isAuthenticated: null,
+    user: null
+};
+
+export default function myauths(state = initialStates, action) {
+    const { type, payload } = action; 
+
+    switch(type) {
+        case LOGIN_SUCCESS:
+            localStorage.setItem('access', payload.access);
+            return {
+                ...state,
+                isAuthenticated: true, 
+                access: payload.access,
+                refresh: payload.refresh,
+            };
+        case LOGIN_LOADED_SUCCESS:
+            return {
+                ...state,
+                user: payload,
+            };
+        case LOGIN_LOADED_FAIL:
+            return {
+                ...state,
+                user: null,
+            };
+        case LOGIN_FAIL:
+            localStorage.removeItem('access');
+            localStorage.removeItem('refresh');
+            return {
+                ...state,
+                isAuthenticated: false, 
+                access: null,
+                refresh: null,
+                user: null,
+            };
+        default:
+            return state;
+    }
+}
