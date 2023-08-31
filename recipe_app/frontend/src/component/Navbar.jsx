@@ -25,12 +25,6 @@ class Navbar extends Component {
                 </div>
                 <ul id="nav-items" className={this.state.clicked ? 
                 'nav-items active' : 'nav-items'}>
-                    {/* <li className={linkClassName}><Link to="/">Home</Link></li>
-                    <li className={linkClassName}><Link to="/about">Our Services</Link></li>
-                    <li className={linkClassName}><Link to="/">Properties</Link></li>
-                    <li className={linkClassName}><Link to="/">Agents</Link></li>
-                    <li className={linkClassName}><Link to="/">About Us</Link></li>
-                    <li className={linkClassName}><Link to="/">Contact Us</Link></li> */}
                     <li className={linkClassName}><Link to='/'><i className="fab fa-facebook" aria-hidden="true"></i></Link></li>
                     <li className={linkClassName}><Link to='/'><i className="fab fa-twitter" ></i></Link></li>
                     <li className={linkClassName}><Link to='/'><i className="fab fa-instagram" aria-hidden="true"></i></Link></li>
