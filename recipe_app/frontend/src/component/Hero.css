@@ -13,6 +13,7 @@
     height: 100%;
     position: absolute;
     z-index: -100;
+    
 }
 
 .swiper-slide {
@@ -21,6 +22,7 @@
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
+    overflow-y: hidden;
 }
 
 .recipe-headline {
@@ -30,6 +32,8 @@
 }
 
 h1 {
-    color: azure;
-    font: 5.1875rem/2.875rem "Source Serif Pro", serif;
+    color: rgb(250, 98, 64);
+    font-weight: 900;
+    font-family: "Source Serif Pro", serif;
+    font-size: 5.1875rem ;
 }
