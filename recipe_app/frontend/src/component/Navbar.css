@@ -26,6 +26,21 @@
    list-style: none;
 }
 
+.nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 38, 0);
+    border-radius: 360px;
+    height: 25px;
+    width: 25px;
+}
+
+.nav-list i {
+    color: #ffffff;
+    font-size: 15px;
+}
+
 
 
  /* .hamburger {
