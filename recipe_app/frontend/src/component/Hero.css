@@ -3,8 +3,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 20px;
-    height: 36em;
+    gap: 10px;
+    height: 28em;
     overflow: hidden;
 }
 
@@ -29,11 +29,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
-h1 {
-    color: rgb(250, 98, 64);
+h2 {
+    color: rgb(255, 255, 255);
     font-weight: 900;
-    font-family: "Source Serif Pro", serif;
-    font-size: 5.1875rem ;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3.5875rem;
+    position: relative;
+    z-index: 100;
 }
