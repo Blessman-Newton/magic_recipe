@@ -41,6 +41,13 @@
     font-size: 15px;
 }
 
+.hamburger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
 
 
  /* .hamburger {
