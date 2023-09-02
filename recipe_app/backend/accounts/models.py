@@ -1,7 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin, BaseUserManager
 
-
 class UserManagerAccount(BaseUserManager):
     def create_user(self, email, name, password=None):
         if not email:
@@ -32,3 +31,18 @@ class UserAccount(AbstractBaseUser, PermissionsMixin):
 
     def __str__(self):
         return self.email
+
+
+
+class RecentItems(models.Model):
+    name = models.CharField(max_length=50)
+    title = models.CharField(max_length=100)
+    image = models.ImageField(default=True)
+    cook = models.CharField(max_length=50)
+    description = models.CharField(max_length=200)
+    publish_date = models.DateField('date publish')
+    
+    
+    def __str__(self):
+        return self.cook
+    
