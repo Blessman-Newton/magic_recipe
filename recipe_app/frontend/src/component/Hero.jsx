@@ -1,10 +1,11 @@
 import React, { useEffect } from 'react';
 import Swiper from 'swiper';
 import 'swiper/swiper-bundle.min.css';
-import SwiperCore, { Autoplay } from 'swiper'; // Import Swiper core and Autoplay module
+import SwiperCore, { Autoplay } from 'swiper'
 import './Hero.css'
 import Search from '../component/Search';
-import image3 from '../asserts/images/backIcons/bg2.jpg';
+import image2 from '../asserts/images/backIcons/bg2.jpg';
+import image3 from '../asserts/images/backIcons/bg5.jpg';
 import image4 from '../asserts/images/backIcons/bg3.webp';
 
 SwiperCore.use([Autoplay]);
@@ -30,11 +31,15 @@ const Hero = () => {
     return (
         <div className="swiper-container" id="Home" >
             <div className="swiper-wrapper">
-                <div className="swiper-slide" style={{ backgroundImage: `url(${image3})` }}></div>
-                <div className="swiper-slide" style={{ backgroundImage: `url(${image4})` }}></div>
+                <div className="swiper-slide" style={{ backgroundImage: `url(${image3})`}}>
+                </div>
+                <div className="swiper-slide" style={{ backgroundImage: `url(${image4})`}}>
+                </div>
+                <div className="swiper-slide" style={{ backgroundImage: `url(${image2})`}}>
+                </div>
             </div>
             <div className='recipe-headline'>
-                <h1>Find a Recipe</h1>
+                <h2>Find a Recipe</h2>
             </div>
             <Search />
         </div>
