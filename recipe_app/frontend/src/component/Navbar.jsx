@@ -16,7 +16,25 @@ class Navbar extends Component {
             <nav className="navigation">
             <div className='hamburger' onClick={this.handClick}>
                     <i className={this.state.clicked ? 
-                    'fa fa-times' :'fa fa-bars' }></i>
+                    'fa fa-times' :'fa fa-bars' }
+                        style={{
+                               color: 'rgb(000, 000, 000)',
+                               fontSize: '20px',
+                               fontWeight: '900',
+                               }}
+                    ></i>
+                    <Link to="/"
+                    style={{
+                        textDecoration: 'none',
+                        color: 'rgb(000, 000, 000)',
+                            }}>
+                        Log in
+                        <i className="fa fa-user"
+                            style={{
+                               paddingLeft:'10px',
+                               }}>
+                        </i>
+                    </Link>
             </div>
                 <div className="logo">
                     <Link to="/">  
@@ -28,6 +46,8 @@ class Navbar extends Component {
                     <li className={linkClassName}><Link to='/'><i className="fab fa-facebook" aria-hidden="true"></i></Link></li>
                     <li className={linkClassName}><Link to='/'><i className="fab fa-twitter" ></i></Link></li>
                     <li className={linkClassName}><Link to='/'><i className="fab fa-instagram" aria-hidden="true"></i></Link></li>
+                    <li className='search'><i className="fa fa-search" aria-hidden="true"></i></li>
+
 
                 </ul>
             </nav>
