@@ -1,4 +1,9 @@
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookF, faGithub, faTwitter} from '@fortawesome/free-brands-svg-icons';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faUser } from '@fortawesome/free-regular-svg-icons';
+
 import  './Navbar.css'
 import { Component } from 'react'
 
@@ -27,13 +32,13 @@ class Navbar extends Component {
                     style={{
                         textDecoration: 'none',
                         color: 'rgb(000, 000, 000)',
+                        
                             }}>
                         Log in
-                        <i className="fa fa-user"
-                            style={{
-                               paddingLeft:'10px',
-                               }}>
-                        </i>
+                        <FontAwesomeIcon 
+                        icon={faUser} size='lg'
+                        style={{paddingLeft: '8px',color: 'rgb(000, 000, 000)',}}
+                         />
                     </Link>
             </div>
                 <div className="logo">
@@ -43,10 +48,12 @@ class Navbar extends Component {
                 </div>
                 <ul id="nav-items" className={this.state.clicked ? 
                 'nav-items active' : 'nav-items'}>
-                    <li className={linkClassName}><Link to='/'><i className="fab fa-facebook" aria-hidden="true"></i></Link></li>
-                    <li className={linkClassName}><Link to='/'><i className="fab fa-twitter" ></i></Link></li>
-                    <li className={linkClassName}><Link to='/'><i className="fab fa-instagram" aria-hidden="true"></i></Link></li>
-                    <li className='search'><i className="fa fa-search" aria-hidden="true"></i></li>
+                    <li className={linkClassName}><Link to='/'><FontAwesomeIcon icon={faFacebookF} size='lg' style={{color: "#FF0000",}} /></Link></li>
+                    <li className={linkClassName}><Link to='/'><FontAwesomeIcon icon={faGithub} size='lg' style={{color: "#FF0000",}} /></Link></li>
+            
+                    <li className={linkClassName}><Link to='/'><FontAwesomeIcon icon={faTwitter} size='lg' style={{color: "#FF0000",}} /></Link></li>
+                    <li className='search'><FontAwesomeIcon icon={faSearch} size='sm' />
+</li>
 
 
                 </ul>
