@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import Swiper from 'swiper';
 import 'swiper/swiper-bundle.min.css';
 import SwiperCore, { Autoplay } from 'swiper'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Hero.css'
 import Search from '../component/Search';
 import image2 from '../asserts/images/backIcons/bg2.jpg';
@@ -40,8 +39,6 @@ const Hero = () => {
                 </div>
             </div>
             <div className='recipe-headline'>
-                <h2>Find a Recipeimport <FontAwesomeIcon icon="fab-brands fa-facebook-f" style={{color: "#f5f5f5",}} /></h2>
-
             </div>
             <Search />
             
