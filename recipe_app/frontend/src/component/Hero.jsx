@@ -39,9 +39,9 @@ const Hero = () => {
                 </div>
             </div>
             <div className='recipe-headline'>
+                <h2>Find a Recipe</h2>
             </div>
             <Search />
-            
         </div>
     )
 }
