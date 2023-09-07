@@ -9,9 +9,10 @@
     width: 100%;
     height: 100%;
     display: flex;
+
     align-items: center;
     padding:  60px 10em;
-    /* background-color: rgb(0, 233, 0); */
+    /* background-color: rgb(0, 233, 0);  */
 }
 
 .top-recipe-img {
@@ -24,11 +25,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;;
-    margin: 0 10%;
+    margin: 0 9%;
+    width: 33rem;
     height: 120px;
     position: relative;
     top: -40px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255); 
 }
 
 .span {
@@ -40,4 +42,105 @@
     left: 148px;
     top: 38px;
     border: 2px solid rgb(255, 255, 255);
+}
+
+.recipe-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.big-recipe {
+    width: 19.6em;
+    height: 20em;
+    /* background-color: bisque; */
+    
+}
+
+.top-recipe-img2 {
+    width: 100%;
+    height: 60%;
+}
+
+.big-recipe-descript {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+    gap: 8px;
+} 
+
+.big-data {
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-direction: column;
+}
+
+.big-data-img {
+    width: 80%;
+}
+
+.big-data span {
+   position: absolute;
+   top: 57em;
+   display: grid;
+   place-content: center;
+   color: aliceblue;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   font-weight: 900;
+   text-align: center;
+   text-transform: uppercase;
+   width: 200px;
+   height: 40px;
+   background-color: rgb(255, 0, 0);
+}
+.popular-recipe {
+    padding: 20px 10%;
+    display:flex ;
+    gap: 5em;
+}
+
+.popular-recipe-img {
+    width: 100px ;
+    height: 65px;
+}
+
+.popular-recipe-descript {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+}
+
+.popular-recipe-descript2 {
+    display: flex;
+    gap: 10px;
+}
+
+.vertical-line {
+        display: block;
+        width: 2px;
+        border: 1px solid rgba(181, 181, 181, 0.482);
+        height: 18em;
+        background-color: rgba(79, 79, 79, 0.34);
+        margin: 0 auto;
+        position: relative;
+        z-index: -99;
+}
+
+.most-top {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.popular-recipe-descript3 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
