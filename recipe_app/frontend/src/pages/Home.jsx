@@ -7,6 +7,7 @@ import image3 from '../asserts/images/backIcons/bg3.webp';
 import image4 from '../asserts/images/backIcons/bg8.jpg';
 import Hero from '../component/Hero';
 import Recipe from '../component/Recipes';
+import Footer from '../component/Footer';
 
 
 
@@ -55,6 +56,7 @@ const Home = () => (
        </div>
         </section>
         <Recipe />
+        <Footer />
     </div>
 );
     
